@@ -1,0 +1,79 @@
+body{
+	text-align: center;
+	background-color: black;
+	//background: black url('images/camera.jpg') no-repeat center;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-auto-rows: minmax(100px,auto);
+	grid-gap: 10px;
+	max-width: 960px
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.container > * {
+	//background-color: #3bbceb;
+	//padding:30px;
+	
+}
+
+header{
+	grid-column: 1/13;
+	font-family: 'Comic Sans MS';
+	font-size: 90px;
+	//background: url('images/camera.jpg') no-repeat center;
+	color : #00FF33;
+
+}
+main{
+	grid-column: 4/13;
+	grid-row:2/4;
+	color:white;
+	padding: 30px;
+}
+
+aside{
+	grid-column : 1/4;
+	color:white;
+}
+
+section{
+	grid-column: 1/13;
+	grid-row: 4/6;
+	color:white;
+	font-size: 25px;
+}
+section .click{
+	cursor: pointer;
+}
+nav{
+	grid-column:1/4;
+	padding:50px;
+	
+}
+nav ul {
+	list-style-type: none;
+	
+}
+nav ul a {
+	color:white;
+	text-decoration: none;
+	font-size: 25px;
+}
+nav ul a:hover {
+	color:orange;
+}
+nav ul a:active {
+	color:yellow;
+}
+footer{
+	grid-column:1/13;
+	text-align: right;
+	color:white;
+	background-color: rgb(54, 21, 25);
+	padding :30px;
+}
